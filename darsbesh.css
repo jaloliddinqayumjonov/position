@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: cornflowerblue;
+}
+.container{
+    height: 80vh;
+    width: 40%;
+    position: relative;
+    border-radius: 20px;
+    top: 8%;
+    left: 10%;
+    
+    background-color: black;
+    transition-duration: .4s;
+    transition-delay: .3s;
+}
+.img{
+    width: 34.5%;
+    height: 50%;
+    
+    border-radius: 20px;
+    position: absolute;
+    left: 600px;
+    top: 100px;
+    transition-duration: .5s;
+    transition-delay: .3s;
+    z-index: 1;
+ 
+}
+.img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.box1{
+    height: 60px;
+    width: 60px;
+    background-color:rgb(184, 178, 178);
+    border-radius: 10px;
+    position: absolute;
+    /* bottom: 200px; */
+    left: 10%;
+    top: 10%;    
+
+}
+.box2{
+    top: 10%;
+    left: 10%;
+    position: absolute;
+    height: 60px;
+    width: 300px;
+    background-color:rgb(184, 178, 178);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+.box2 >p{
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+.img:hover ~.container{
+    left: 3%;
+    top: .2%;
+}
+.img:hover ~.container >.box2{
+    top: 80%;
+    left: 6%;
+    transition-delay: .5s;
+    transition-duration: .5s;
+}
+.img:hover ~.container > .box1{
+    top: 68%;
+    left: 6%;
+    transition-delay: .3s;
+  
+    transition-duration: .5s;
+    
+    transition-timing-function:ease-in;
+}
